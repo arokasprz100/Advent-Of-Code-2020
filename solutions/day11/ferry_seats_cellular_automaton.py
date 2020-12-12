@@ -15,8 +15,8 @@ class FerrySeatsCellularAutomaton:
 
     def evaluate_position(self, x, y):
         if self.is_inside_board((x, y)):
-            return int(self.layout[y][x] == '#')
-        return 0
+            return self.layout[y][x] == '#'
+        return False
 
     def evaluate_one_step(self):
         new_layout = copy.deepcopy(self.layout)
