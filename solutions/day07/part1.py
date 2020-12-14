@@ -18,4 +18,4 @@ if __name__ == '__main__':
     bags = {bag[0]: bag[1] for bag in bag_details}
     bags_contain_shiny_gold_one = {bag_color: search_for_shiny_gold_bags(bag_color, bags) for bag_color in bags}
     number_of_containing_shiny_gold_one = len(list(filter(lambda x: x[1] is True, bags_contain_shiny_gold_one.items())))
-    print("There are {} bags that contain shing gold bag.".format(number_of_containing_shiny_gold_one))
+    print("There are {} bags that contain shiny gold bag.".format(number_of_containing_shiny_gold_one))
