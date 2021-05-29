@@ -28,9 +28,6 @@ if __name__ == '__main__':
     valid_messages = [bool(re.match(valid_message_regex, message)) for message in messages]
     print(sum(valid_messages))
 
-    # rule 8 - mozliwosc wielokrotnego powtorzenia rule 42
-    # rule 11 - rekursja
-
 
 
 
